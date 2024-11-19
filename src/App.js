@@ -1,5 +1,7 @@
 
 import './App.css';
+import {students} from '../src/assets/data/studentdb.js'
+import StudentTable from './components/StudentTable';
 
 function App() {
   return (
@@ -7,14 +9,12 @@ function App() {
     <h1>Students Information Portal</h1>
 
     <table>
+      <tbody>
       <tr>
-        <td>First Name</td>
-        <td>Last Name</td>
-        <td>Course</td>
-        <td>Country</td>
-        <td>profile</td>
+        <td><StudentTable students={students} /></td>
 
       </tr>
+      </tbody>
     </table>
     </>
   );
