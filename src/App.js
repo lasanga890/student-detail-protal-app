@@ -7,9 +7,9 @@ function App() {
   const [fontSize, setFontSize] = useState(16); 
 
   const handleFontSize = (size) => {
-    if (size === "S") setFontSize(12);
-    else if (size === "M") setFontSize(16);
-    else if (size === "L") setFontSize(20);
+    if (size === "S") setFontSize(16);
+    else if (size === "M") setFontSize(20);
+    else if (size === "L") setFontSize(24);
   };
   
   return (
@@ -27,7 +27,7 @@ function App() {
           <tbody>
             <tr>
               <td>
-                <StudentTable students={students} className={fontSize} />
+                <StudentTable students={students}  />
               </td>
             </tr>
           </tbody>
