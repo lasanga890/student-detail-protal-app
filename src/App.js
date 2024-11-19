@@ -1,4 +1,5 @@
 import "./App.css";
+
 import { students } from "../src/assets/data/studentdb.js";
 import StudentTable from "./components/StudentTable";
 
