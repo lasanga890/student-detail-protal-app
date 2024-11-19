@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "../assets/css/compo.css";
-import { students } from "../assets/data/studentdb";
 import Profile from "./Profile";
 
 export default function StudentTable(props) {
@@ -26,15 +25,16 @@ export default function StudentTable(props) {
                   <td>{student.lastName}</td>
                   <td>{student.course}</td>
                   <td>{student.address.country}</td>
-                <td><button onClick={(()=>setData(students))}>view</button></td>
+                <td><button onClick={(()=>setData(student))}>view</button></td>
                 </tr>
               ))}
             </tbody>
           </table>
-          <div className="rightDiv">
+          
+        </div>
+        <div className="rightDiv">
             <Profile students={data} />
           </div>
-        </div>
       </div>
     </>
   );

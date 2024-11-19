@@ -12,7 +12,7 @@
 {
     background-color: #efefef;
     color: #000;
-    width: 100%;
+    width: 48%;
     float: left;
 }
 .rightDiv
@@ -24,4 +24,13 @@
 }
 .profile{
     width: 75%;
+}
+table{
+    border-collapse: collapse;
+    width:100%;
+    text-align: left;
+}
+.fontSize{
+    text-align: left;
+    
 }
