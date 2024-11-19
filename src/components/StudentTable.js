@@ -5,7 +5,7 @@ export default function StudentTable(props) {
     <>
       <div className="outerDiv">
         <div className="leftDiv">
-          <table>
+          <table border={1}>
             <thead>
               <tr>
                 <td>First Name</td>
